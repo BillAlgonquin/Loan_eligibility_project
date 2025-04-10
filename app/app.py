@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
 # Load the model.
 try:
-    model = joblib.load('models/loan_eligibility_model7.pkl')  # Ensure the correct path to the model
+    model = joblib.load('models/loan_eligibility_model.pkl')  # Ensure the correct path to the model
     logging.info("Model loaded successfully.")
 except FileNotFoundError:
     logging.error("No se encontró el archivo del modelo. Verifique la ruta y suba el archivo correctamente.")
